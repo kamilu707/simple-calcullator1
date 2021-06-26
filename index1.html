@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <!-- <link src="main.js" charset="utf"> -->
+    <title>Document</title>
+
+
+    <!-- <script lang="javascript">
+        function bonjour() {
+            alert("Bonjour");
+        }
+    </script> -->
+</head>
+
+<body>
+
+    <!-- <form action="">
+
+        <input type="button" name="My Button" value="Cliquez Ici" onClick="bonjour()">
+
+
+    </form>
+
+    <script lang="javascript">
+        document.write("vous avez le bonjour de javascript <br/>")
+        var x = 12;
+        var z = "juin";
+        document.write("la date est: " + x + " " + z);
+
+        // Start of  Eqution Exercice 
+        a = prompt("a= ");
+        b = prompt("b= ");
+        if (a == 0) {
+            if (b == 0) {
+                alert(a + "x=" + b + "\n" + "tous les nombres est solution");
+            } else {
+                alert(a + "x=" + b + "\n" + "0x est defferent de " + b + "\n" + " pas de solution");
+            }
+        } else {
+            alert(a + "x=" + b + "\n" + "une seule solution \n" + "x=" + (b - b) / a);
+
+        }
+
+        //  end of Equation
+    </script> -->
+
+
+
+
+    <div class="form_continer">
+
+        <div class="form">
+            <!-- <audio id="click_sound" src="./audio/White_Hats.mp3"></audio> -->
+
+            <label for="nb1">Enter Valaue 1</label>
+            <input type="text" id="nb1" />
+            <label for="nb1">Use Operator [+ - * /]</label>
+            <input class="opertaor" ty pe="text" id="op" />
+            <label for="nb1">Enter Valaue 2</label>
+            <input type="text" id="nb2">
+            <button onclick="calcule(); audio.play()">=</button>
+            <input type="text" id="r1" value="0" />
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function calcule() {
+            var nb1 = document.getElementById("nb1").value;
+            var op = document.getElementById("op").value;
+            var nb2 = document.getElementById("nb2").value;
+
+            switch (op) {
+                case "+":
+                    document.getElementById("r1").value = (Number(nb1) + Number(nb2));
+                    break;
+
+                case "-":
+                    document.getElementById("r1").value = (Number(nb1) - Number(nb2));
+                    break;
+
+                case "*":
+                    document.getElementById("r1").value = (Number(nb1) * Number(nb2));
+                    break;
+
+                case "/":
+                    document.getElementById("r1").value = (Number(nb1) / Number(nb2));
+                    break;
+            }
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        // function play() {
+        //     var ClickSound = document.getElementById("click_sound").value;
+        //     ClickSound.play();
+        // }
+
+        var audio = new Audio();
+        audio.src = "./audio/mixkit-gate-latch-click-1924.wav"
+        if (adio.play == true) {
+            audio.pause;
+        } else {
+            audio.play();
+
+        }
+    </script>
+
+</body>
+
+</html>
